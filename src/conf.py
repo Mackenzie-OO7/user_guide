@@ -242,5 +242,5 @@ html_context = {
 }
 
 gettext_uuid = True
-gettext_compact = False
+gettext_compact = True
 locale_dirs = ['locales/']
