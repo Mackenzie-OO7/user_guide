@@ -38,6 +38,7 @@ json_url = "https://common-workflow-languageuser-guide.readthedocs.io/en/latest/
 # ones.
 extensions = [
     'myst_parser',
+    'sphinx.ext.intersphinx',
     'sphinx.ext.graphviz',
     'sphinx_reredirects',
     'cwl.sphinx.runcmd'
@@ -60,6 +61,11 @@ myst_substitutions = {
 }
 
 master_doc = 'index'
+
+# intersphinx settings
+intersphinx_mapping = {
+    'cwltool': ('https://cwltool.readthedocs.io/en/latest/', None),
+}
 
 # Set the default role so we can use `foo` instead of ``foo``
 default_role = 'literal'
